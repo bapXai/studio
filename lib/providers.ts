@@ -1,0 +1,91 @@
+import DeepSeekLogo from "@/assets/deepseek.svg";
+import QwenLogo from "@/assets/qwen.svg";
+import KimiLogo from "@/assets/kimi.svg";
+import ZaiLogo from "@/assets/zai.svg";
+import MiniMaxLogo from "@/assets/minimax.svg";
+
+export const PROVIDERS = {
+  "fireworks-ai": {
+    name: "Fireworks AI",
+    id: "fireworks-ai",
+  },
+  nebius: {
+    name: "Nebius AI Studio",
+    id: "nebius",
+  },
+  sambanova: {
+    name: "SambaNova",
+    id: "sambanova",
+  },
+  novita: {
+    name: "NovitaAI",
+    id: "novita",
+  },
+  hyperbolic: {
+    name: "Hyperbolic",
+    id: "hyperbolic",
+  },
+  together: {
+    name: "Together AI",
+    id: "together",
+  },
+  groq: {
+    name: "Groq",
+    id: "groq",
+  },
+  "zai-org": {
+    name: "Z.ai",
+    id: "zai",
+  },
+};
+
+export const MODELS = [
+  {
+    value: "deepseek-ai/DeepSeek-V3-0324",
+    label: "DeepSeek V3 O324",
+    providers: ["fireworks-ai", "nebius", "sambanova", "novita", "hyperbolic"],
+    autoProvider: "novita",
+    logo: DeepSeekLogo,
+    companyName: "DeepSeek",
+  },
+  {
+    value: "deepseek-ai/DeepSeek-V3.2",
+    label: "DeepSeek V3.2",
+    logo: DeepSeekLogo,
+    companyName: "DeepSeek",
+    isNew: true,
+  },
+  {
+    value: "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    label: "Qwen3 Coder 480B A35B Instruct",
+    providers: ["novita", "hyperbolic"],
+    autoProvider: "novita",
+    logo: QwenLogo,
+    companyName: "Qwen",
+  },
+  {
+    value: "moonshotai/Kimi-K2-Instruct-0905",
+    label: "Kimi K2 Instruct",
+    providers: ["together", "novita", "groq"],
+    autoProvider: "groq",
+    logo: KimiLogo,
+    companyName: "Kimi",
+  },
+  {
+    value: "zai-org/GLM-4.7",
+    label: "GLM-4.7",
+    logo: ZaiLogo,
+    companyName: "Z.ai",
+    isNew: true,
+  },
+  {
+    value: "MiniMaxAI/MiniMax-M2.1",
+    label: "MiniMax M2.1",
+    logo: MiniMaxLogo,
+    companyName: "MiniMax",
+    isNew: true,
+    top_k: 40,
+    temperature: 1.0,
+    top_p: 0.95,
+  }
+];
