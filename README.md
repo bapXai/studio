@@ -19,6 +19,6 @@ models:
   - MiniMaxAI/MiniMax-M2.1
 ---
 
-# bapXcode 🐳
+# bapXai 
 
-bapXcode is a Vibe Coding Platform designed to make coding smarter and more efficient. Tailored for developers, data scientists, and AI engineers, it integrates generative AI into your coding projects to enhance creativity and productivity.
+bapXai is a Automation and Coding Platform designed to make coding and automation smarter and more efficient. Tailored for developers, data scientists, and AI engineers, it integrates generative AI into your coding projects to enhance creativity and productivity.
