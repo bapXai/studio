@@ -1,6 +1,6 @@
 ---
 title: bapXai
-emoji: 🐳
+emoji: 🔩
 colorFrom: blue
 colorTo: blue
 sdk: docker
